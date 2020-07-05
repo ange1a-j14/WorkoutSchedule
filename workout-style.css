@@ -1,14 +1,23 @@
+* {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 150;
+}
+
 #Calendar {
-  font: small-caps bold 30px/1 sans-serif;
+  font-size: 30px;
   position:fixed;
 }
 
 h2 {
-  font: small-caps bold 24px/1 sans-serif;
+  font-size: 24px;
 }
 
 p {
-  font: small-caps bold 16px/1 sans-serif;
+  font-size: 16px;
+}
+
+.calendar-container {
+
 }
 
 .dropdown {
@@ -19,7 +28,7 @@ p {
 .drop-button {
   background-color: rgb(247,208,247); /*darker*/
   color: rgb(128,128,128);
-  font: small-caps bold 20px/1 sans-serif;
+  font-size: 20px;
   border: 2px solid #7E7979;
   position:relative;
   display: inline;
@@ -43,13 +52,13 @@ p {
 .dropdown:hover .dropdown-content {display:block;}
 
 .dropdown-content a {
-  font: small-caps bold 15px/1 sans-serif;
-  color: rgb(150,150,150);
+  font-size: 15px;
+  color: rgb(128,128,128);
   display: block;
-  padding: 8px 46px;
+  padding: 10px 20px;
 }
 
 .dropdown-content a:hover {
-  color: rgb(128,128,128);
+  color: rgb(100,100,100);
   background-color: rgb(247,208,247);
 }
