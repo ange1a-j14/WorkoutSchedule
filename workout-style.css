@@ -4,8 +4,7 @@
 }
 
 #Calendar {
-  font-size: 30px;
-  position:fixed;
+
 }
 
 h2 {
@@ -20,13 +19,14 @@ p {
 
 }
 
-/*.week {
+.week {
   position:relative;
-  left: 60px;
-}*/
+  left: 170px;
+  top: 30px;
+}
 
 .dropdown {
-  position:relative;
+  position:fixed;
   display:inline-block;
 }
 
@@ -37,6 +37,8 @@ p {
   border: 2px solid #7E7979;
   position:relative;
   display:inline;
+  font-size: 30px;
+  min-width: 128px;
 }
 
 .dropdown-content {
@@ -44,7 +46,7 @@ p {
   display:none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   background-color: rgb(249,225,249);
-  padding: 10px 20px;
+  min-width: 128px;
 }
 
 .drop-button:hover {
@@ -63,7 +65,8 @@ p {
   font-size: 15px;
   color: rgb(128,128,128);
   display: block;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
