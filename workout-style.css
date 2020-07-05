@@ -1,7 +1,55 @@
-h1 {
+#Calendar {
+  font: small-caps bold 30px/1 sans-serif;
+  position:fixed;
+}
+
+h2 {
   font: small-caps bold 24px/1 sans-serif;
 }
 
 p {
   font: small-caps bold 16px/1 sans-serif;
+}
+
+.dropdown {
+  position:relative;
+  display:inline-block;
+}
+
+.drop-button {
+  background-color: rgb(247,208,247); /*darker*/
+  color: rgb(128,128,128);
+  font: small-caps bold 20px/1 sans-serif;
+  border: 2px solid #7E7979;
+  position:relative;
+  display: inline;
+}
+
+.dropdown-content {
+  position:absolute;
+  display:none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: rgb(249,225,249);
+  /*padding: 6px 25px;*/
+}
+
+.drop-button:hover {
+  background-color: rgb(249,225,249); /*lighter*/
+  color: rgb(150,150,150);
+  border: 2px solid rgb(150, 150, 150);
+  .dropdown-content {display:block;}
+}
+
+.dropdown:hover .dropdown-content {display:block;}
+
+.dropdown-content a {
+  font: small-caps bold 15px/1 sans-serif;
+  color: rgb(150,150,150);
+  display: block;
+  padding: 8px 46px;
+}
+
+.dropdown-content a:hover {
+  color: rgb(128,128,128);
+  background-color: rgb(247,208,247);
 }
