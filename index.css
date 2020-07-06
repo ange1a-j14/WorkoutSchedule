@@ -3,10 +3,6 @@
   font-weight: 150;
 }
 
-#Calendar {
-
-}
-
 h2 {
   font-size: 24px;
 }
@@ -16,13 +12,35 @@ p {
 }
 
 .calendar-container {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 30px;
+  background-color: rgb(230,237,255)/*rgb(206,16,233)*//*rgb(238,251,248)*/;
+  position:relative;
+}
+
+.calendar-container .vert-line {
+  padding-right: 10px;
+  border-left: 2px solid #000;
+  width: 100%;
+}
+
+.calendar-container .week {
+  position:relative;
+  padding: 30px 50px;
+  color: rgb(96,19,235);
+}
+
+.calendar-container .week .day {
 
 }
 
-.week {
-  position:relative;
-  left: 170px;
-  top: 30px;
+.calendar-container .week .day .info {
+
+}
+
+.h-line {
+  border-top: 1px solid rgb(174,221,255);
 }
 
 .dropdown {
@@ -30,46 +48,43 @@ p {
   display:inline-block;
 }
 
-.drop-button {
-  background-color: rgb(247,208,247); /*darker*/
-  color: rgb(128,128,128);
+.dropdown .drop-button {
+  background-color: rgb(204,252,255);/*rgb(174,221,255);*//*rgb(247,208,247);*/ /*darker*/
+  color: rgb(96,19,235);/*rgb(128,128,128);dark gray*/
   font-size: 20px;
-  border: 2px solid #7E7979;
-  position:relative;
+  border: 2px solid rgb(96,19,235);
+  position:sticky;
   display:inline;
   font-size: 30px;
   min-width: 128px;
 }
 
-.dropdown-content {
+.dropdown .drop-button:hover {
+  background-color: rgb(96,19,235);/*rgb(249,225,249);*/ /*lighter pastel*/
+  color: rgb(204,252,255);/*rgb(150,150,150);gray*/
+  border: 2px solid rgb(204,252,255);
+  .dropdown-content {display:block;}
+}
+
+.dropdown .dropdown-content {
   position:absolute;
   display:none;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-color: rgb(249,225,249);
+  background-color: rgb(204,252,255);/*rgb(236,244,254);white blue*//*rgb(249,225,249);pastel*/
   min-width: 128px;
-}
-
-.drop-button:hover {
-  background-color: rgb(249,225,249); /*lighter*/
-  color: rgb(150,150,150);
-  border: 2px solid rgb(150, 150, 150);
-  .dropdown-content {display:block;}
 }
 
 .dropdown:hover .dropdown-content {display:block;}
 
-.dropdown-content:hover {
-
-}
-.dropdown-content a {
-  font-size: 15px;
-  color: rgb(128,128,128);
+.dropdown .dropdown-content a {
+  font-size: 16px;
+  color: rgb(96,19,235);/*rgb(128,128,128);gray*/
   display: block;
   padding: 10px 10px;
   text-align: center;
 }
 
-.dropdown-content a:hover {
-  color: rgb(100,100,100);
-  background-color: rgb(247,208,247);
+.dropdown .dropdown-content a:hover {
+  color: rgb(204,252,255);/*rgb(100,100,100);gray*/
+  background-color: rgb(96,19,235);/*rgb(247,208,247);pastel*/
 }
