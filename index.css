@@ -88,3 +88,11 @@ p {
   color: rgb(204,252,255);/*rgb(100,100,100);gray*/
   background-color: rgb(96,19,235);/*rgb(247,208,247);pastel*/
 }
+
+.videos {
+  display: inline-block;
+}
+
+.videos .video {
+  display: inline-block;
+}
